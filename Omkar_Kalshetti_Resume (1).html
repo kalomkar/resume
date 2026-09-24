@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omkar Kalshetti - Resume</title>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #e9eef5;
+        color: #222;
+        line-height: 1.5;
+    }
+    .toolbar {
+        text-align: center;
+        padding: 18px;
+        background: #172b4d;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .toolbar button {
+        border: 0;
+        background: #fff;
+        color: #172b4d;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 25px auto;
+        background: #fff;
+        padding: 18mm;
+        box-shadow: 0 5px 25px rgba(0,0,0,.12);
+    }
+    header {
+        border-bottom: 3px solid #172b4d;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    h1 {
+        color: #172b4d;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+    .role {
+        font-size: 15px;
+        color: #52606d;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        font-size: 13px;
+        color: #333;
+    }
+    .section { margin-top: 17px; }
+    .section h2 {
+        color: #172b4d;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: .8px;
+        border-bottom: 1px solid #cbd5e1;
+        padding-bottom: 5px;
+        margin-bottom: 9px;
+    }
+    .objective {
+        text-align: justify;
+        font-size: 13.5px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12.5px;
+    }
+    th, td {
+        border: 1px solid #d7dee8;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background: #f1f5f9;
+        color: #172b4d;
+    }
+    .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    ul { padding-left: 19px; font-size: 13px; }
+    li { margin-bottom: 5px; }
+    .details {
+        display: grid;
+        grid-template-columns: 155px 1fr;
+        gap: 6px 12px;
+        font-size: 13px;
+    }
+    .label { font-weight: 700; color: #374151; }
+    .declaration {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .signature {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+    .footer-note {
+        margin-top: 20px;
+        font-size: 10px;
+        color: #6b7280;
+        text-align: center;
+    }
+    @media (max-width: 800px) {
+        .resume {
+            width: 100%;
+            margin: 0;
+            box-shadow: none;
+            padding: 25px;
+        }
+        .two-col { grid-template-columns: 1fr; }
+    }
+    @media print {
+        body { background: white; }
+        .toolbar { display: none; }
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0;
+            padding: 15mm;
+            box-shadow: none;
+        }
+        @page { size: A4; margin: 0; }
+    }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+    <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+</div>
+
+<main class="resume">
+    <header>
+        <h1>OMKAR KALSHETTI</h1>
+        <div class="role">BCA 2nd Year Student | S.R.N. Mehta Degree College, Kalaburagi</div>
+        <div class="contact">
+            <span>📧 omkarkalshetti@gmail.com</span>
+            <span>📱 6361688500</span>
+            <span>📍 Kalaburagi, Karnataka</span>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Career Objective</h2>
+        <p class="objective">
+            Motivated and responsible BCA second-year student seeking opportunities to begin a career
+            in the Information Technology field. Interested in learning practical computer applications,
+            cybersecurity, cloud computing, networking, and modern technologies. Eager to develop
+            professional skills through real-world projects, teamwork, and continuous learning while
+            contributing positively to an organization.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Computer Applications (BCA) – 2nd Year</td>
+                    <td>S.R.N. Mehta Degree College, Kalaburagi</td>
+                    <td>Currently Pursuing</td>
+                </tr>
+                <tr>
+                    <td>12th / PUC</td>
+                    <td>Shri Chhatrapati Shivaji College, Omerga</td>
+                    <td>63.40%</td>
+                </tr>
+                <tr>
+                    <td>10th / SSLC</td>
+                    <td>Mahatma Gandhi Vidyalaya, Diggi</td>
+                    <td>84.40%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="two-col">
+        <section class="section">
+            <h2>Technical & Professional Interests</h2>
+            <ul>
+                <li>Computer Applications</li>
+                <li>Networking Fundamentals</li>
+                <li>Cybersecurity Fundamentals</li>
+                <li>Cloud Computing</li>
+                <li>Artificial Intelligence & IoT</li>
+                <li>Web Technologies</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Strengths</h2>
+            <ul>
+                <li>Quick learner and willing to learn new technologies</li>
+                <li>Responsible and punctual</li>
+                <li>Positive attitude toward work</li>
+                <li>Good teamwork and cooperation</li>
+                <li>Problem-solving mindset</li>
+                <li>Self-motivated and hardworking</li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="section">
+        <h2>Languages Known</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr><td>Marathi</td><td>Advanced</td></tr>
+            <tr><td>Hindi</td><td>Advanced</td></tr>
+            <tr><td>English</td><td>Beginner</td></tr>
+            <tr><td>Kannada</td><td>Beginner</td></tr>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>Personal Details</h2>
+        <div class="details">
+            <div class="label">Full Name</div><div>Omkar Jayanand Kalshetti</div>
+            <div class="label">Date of Birth</div><div>20 December 2006</div>
+            <div class="label">Nationality</div><div>Indian</div>
+            <div class="label">Marital Status</div><div>Unmarried</div>
+            <div class="label">Current Location</div><div>Kalaburagi, Karnataka</div>
+            <div class="label">Permanent Address</div><div>At Post Diggi, Taluka Omerga, District Dharashiv, Maharashtra</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Declaration</h2>
+        <p class="declaration">
+            I hereby declare that the information provided above is true and correct to the best of my
+            knowledge and belief. I take full responsibility for the accuracy of the information provided
+            in this resume.
+        </p>
+
+        <div class="signature">
+            <div>
+                <strong>Place:</strong> Kalaburagi<br>
+                <strong>Date:</strong> ______________
+            </div>
+            <div style="text-align:right;">
+                <strong>Omkar Jayanand Kalshetti</strong><br>
+                Signature
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-note">Professional Resume • Omkar Jayanand Kalshetti</div>
+</main>
+
+</body>
+</html>
